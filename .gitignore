@@ -55,3 +55,6 @@ bower.json
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# For personal reference for important Ruby/Rails commands
+INFO.md
