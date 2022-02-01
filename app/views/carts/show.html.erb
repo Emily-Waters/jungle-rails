@@ -3,7 +3,7 @@
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
-
+<% if not enhanced_cart.empty? %>
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -15,9 +15,11 @@
         </tr>
       </thead>
       <tbody>
+
         <% enhanced_cart.each do |item| %>
           <%= render 'item', product: item[:product], quantity: item[:quantity].to_i %>
         <% end %>
+
       </tbody>
       <tfoot>
         <tr>
@@ -25,7 +27,7 @@
             TOTAL:
           </th>
           <th>
-            <%= cart_subtotal_cents / 100.0 %>
+            <%= humanized_money_with_symbol cart_subtotal_cents / 100.0 %>
           </th>
         </tr>
       </tfoot>
@@ -48,5 +50,8 @@
       <% end %>
     </div>
   </div>
+<% else %>
+    <h3 class ="alert">Hey, looks like your cart is empty, would you like to go <a href="/">back</a> and add some items? </h3>
+<% end %>
 
 </section>
