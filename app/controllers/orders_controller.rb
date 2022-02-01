@@ -1,5 +1,6 @@
 class OrdersController < ApplicationController
 
+  # TODO Add line_items matching order id
   def show
     @order = Order.find(params[:id])
   end
