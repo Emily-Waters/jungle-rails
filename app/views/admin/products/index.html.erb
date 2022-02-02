@@ -4,8 +4,10 @@
     <h1>Admin &raquo; All Products</h1>
   </header>
 
-  <div class="well">
+  <div class="well" style="display:flex;justify-content:space-between;">
     <%= link_to '+ New Product', [:new, :admin, :product], class: 'btn btn-info' %>
+    <%= link_to ' Dashboard ', [:admin, :root], class: 'btn btn-info' %>
+
   </div>
 
   <div class="panel panel-default products">

@@ -115,5 +115,12 @@ main section.products-show {
   padding: 1rem;
   border: 2px solid rgba(66, 66, 66, 0.493);
   border-radius: 10px;
-  // margin-bottom: 1em;
+}
+
+div.center-align {
+  text-align: center;
+
+  th {
+    text-align: center;
+  }
 }
