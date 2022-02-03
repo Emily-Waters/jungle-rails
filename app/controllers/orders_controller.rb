@@ -1,5 +1,7 @@
 class OrdersController < ApplicationController
 
+  #TODO: After successful order, db needs to be updated to reflect new product quantity
+
   def show
     @order = Order.find(params[:id])
     @order_items = order_items

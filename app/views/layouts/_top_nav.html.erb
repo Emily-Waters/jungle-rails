@@ -30,6 +30,7 @@
         </li>
         <% if current_user %>
           <li class="">
+          <% #TODO: Kinda cheating by using an anchor tag for formatting, clean me up %>
           <a disabled="true">
             <%= "Signed in as: #{current_user.email}" %>
           </a>

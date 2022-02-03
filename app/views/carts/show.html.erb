@@ -37,6 +37,8 @@
   <div class="row">
     <div class="col-xs-12">
       <%= form_tag orders_path do %>
+      <% #TODO: Add actual user data instead of hardcoded values %>
+
         <script
           src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"

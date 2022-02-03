@@ -13,6 +13,7 @@
   <td>
     <%= button_to remove_item_cart_path(product_id: product.id), class: 'btn btn-xs btn-danger' do %> - <% end %>
     <%= quantity %>
+    <%#TODO: Disable this button when quantity is met %>
     <%= button_to add_item_cart_path(product_id: product.id), class: 'btn btn-xs btn-success' do %> + <% end %>
   </td>
   <td>
