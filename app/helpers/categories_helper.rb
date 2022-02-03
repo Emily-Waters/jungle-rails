@@ -5,7 +5,7 @@ module CategoriesHelper
   end
 
   def product_count_by_category(id)
-    Product.where(category_id: id).count
+    Product.product_count_by_category(id)
   end
 
 end
