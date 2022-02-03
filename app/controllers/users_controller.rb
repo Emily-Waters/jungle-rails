@@ -5,8 +5,6 @@ class UsersController < ApplicationController
   end
 
   def create
-    # throw user_params
-
     user = User.new(user_params)
     if user.save
       session[:user_id] = user.id
@@ -26,10 +24,6 @@ class UsersController < ApplicationController
       :password,
       :password_confirmation
     )
-  end
-
-  def encrypt_password
-    #TODO bcrypt password here
   end
 
 end
