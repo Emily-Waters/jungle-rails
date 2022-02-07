@@ -41,7 +41,7 @@ RSpec.describe User, type: :model do
         password_confirmation: '12345'
       )
       @user.save
-      expect(@user.errors.full_messages).to include("Email can't be blank")
+      expect(@user.errors.full_messages).to include('something')
     end
   end
 end
