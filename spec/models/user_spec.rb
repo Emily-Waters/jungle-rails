@@ -41,7 +41,8 @@ RSpec.describe User, type: :model do
         password_confirmation: '12345'
       )
       @user.save
-      expect(@user.errors.full_messages).to include('something')
+      @newuser.save
+      expect(@newuser.errors.full_messages).to include('Email has already been taken')
     end
   end
 end
