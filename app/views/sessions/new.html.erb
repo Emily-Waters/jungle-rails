@@ -1,10 +1,9 @@
 <h1>Login</h1>
-<%= form_for :session do |form| %>
-  Email: <%= form.text_field :email %>
-  Password: <%= form.password_field :password %>
-  <%= submit_tag "Submit" %>
-  <% if flash.alert %>
-    <div class="alert alert-info"><%= flash.alert %></div>
-  <% end %>
-<% end %>
 
+<%= form_tag '/login' do %>
+
+  Email: <%= text_field_tag :email %>
+  Password: <%= password_field_tag :password %>
+  <%= submit_tag "Submit" %>
+
+<% end %>

@@ -10,7 +10,6 @@ class ApplicationController < ActionController::Base
   end
   helper_method :current_user
 
-  # TODO: Does this need to change? Is it being used?
   def authorize
     redirect_to '/login' unless current_user
   end
