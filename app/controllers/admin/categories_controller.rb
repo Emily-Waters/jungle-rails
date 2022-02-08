@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require_relative 'admin_base_controller'
-
 module Admin
   class CategoriesController < BaseController
     def index
@@ -29,6 +27,5 @@ module Admin
         :name
       )
     end
-
   end
 end
