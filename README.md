@@ -32,3 +32,25 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 - PostgreSQL 9.x
 - Stripe
+
+## Screenshots
+
+### Admin Products Page
+
+![admin products page](https://github.com/Emily-Waters/jungle-rails/blob/master/docs/admin_products.png)
+
+### Cart
+
+![cart](https://github.com/Emily-Waters/jungle-rails/blob/master/docs/cart.png)
+
+### Error Validation
+
+![error validation](https://github.com/Emily-Waters/jungle-rails/blob/master/docs/error_validation.png)
+
+### Browse and Shop!
+
+![products page](https://github.com/Emily-Waters/jungle-rails/blob/master/docs/products.png)
+
+### Stripe Checkout!
+
+![successful order](https://github.com/Emily-Waters/jungle-rails/blob/master/docs/placed_order.png)
