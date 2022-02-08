@@ -37,18 +37,18 @@
   <div class="row">
     <div class="col-xs-12">
       <%= form_tag orders_path do %>
-      <% #TODO: Add actual user data instead of hardcoded values %>
 
         <script
           src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-amount="<%= cart_subtotal_cents %>"
           data-name="Jungle"
-          data-description="Khurram Virani's Jungle Order"
+          data-description="<%=get_user_info.first_name%> <%= get_user_info.last_name%>'s Jungle Order"
           data-locale="auto"
-          data-email="kvirani@gmail.com"
+          data-email="<%=get_user_info.email%>"
           data-currency="cad">
         </script>
+
       <% end %>
     </div>
   </div>
