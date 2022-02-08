@@ -7,8 +7,8 @@ class User < ActiveRecord::Base
   validates :password_digest, presence: true
   has_secure_password
 
-  def self.authenticate_with_credentials(email, password)
-    user = User.find_by_email(email.strip.downcase)
-    user && user.authenticate(password)
+  def self.authenticate_with_credentials(params)
+    user = User.find_by_email(params[:email])
+    user && user.authenticate(params[:password])
   end
 end

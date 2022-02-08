@@ -20,7 +20,7 @@ Rails.application.routes.draw do
 
   resources :about, only: [:index]
 
-  resources :users
+  resources :users, only: %i[create new]
 
   # TODO: clean this up
   get '/login' => 'sessions#new'
