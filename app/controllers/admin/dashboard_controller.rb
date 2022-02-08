@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
-class Admin::DashboardController < ApplicationController
-  def show; end
+require_relative 'admin_base_controller'
 
-  http_basic_authenticate_with name: ENV['ADMIN_USER_NAME'], password: ENV['ADMIN_PASSWORD']
+module Admin
+  class DashboardController < BaseController
+    def show; end
+  end
 end
